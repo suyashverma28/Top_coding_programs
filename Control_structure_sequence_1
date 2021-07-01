@@ -1,0 +1,17 @@
+//Printing Sequence 3 8 13 24 41 70....
+#include<iostream>
+using namespace std;
+int main()
+{
+  //Type your code here.
+  int n,first_no=3,second_no=8,no;
+  cin>>n;
+  cout<<first_no<<" "<<second_no<<" ";
+  for(int i=2;i<n;i++)
+  {
+    no =first_no+second_no+i;
+    first_no=second_no;
+    second_no=no;
+    cout<<no<<" ";
+}
+}
