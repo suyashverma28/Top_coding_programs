@@ -1,0 +1,25 @@
+//Detecting upper and Lower Case
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char ch;
+    cin>>ch;
+    if(ch>=65&&ch<=90)
+    {
+        cout<<"Upper case";
+    }
+    else if(ch>=97&&ch<=122)
+    {
+        cout<<"Lower case";
+    }
+    else
+    {
+        cout<<"Invalid";
+    }
+    return 0;
+    
+}
