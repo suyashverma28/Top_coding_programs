@@ -1,0 +1,29 @@
+//Sum of digits and then dividing it
+
+#include <bits/stdc++.h>
+using namespace std;
+
+//For Sum of digits and then dividing the number by sum
+
+int CheckNivenNumber(int n)
+{
+    int temp = n;
+    int sum=0,rem;
+    while(n!=0) //36
+    {
+        rem = n%10;
+        sum = sum+rem;
+        n=n/10;
+    }
+    int result = temp/sum;
+    return result;
+    
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<CheckNivenNumber(n);
+    return 0;
+}
